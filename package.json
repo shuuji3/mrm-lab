@@ -20,21 +20,17 @@
   "scripts": {
     "lint": "eslint . --cache --fix",
     "pretest": "npm run lint",
-    "format": "prettier --loglevel warn --write \"**/*.{js,css,md}\"",
+    "format": "prettier --loglevel warn --write \"**/*.{js,jsx,css,scss,md}\"",
     "posttest": "npm run format",
-    "prepare": "husky install"
+    "prepare": "git config git.hooksPath .githooks"
   },
   "keywords": [],
   "devDependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/parser": "^7.15.5",
     "eslint": "^7.32.0",
-    "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2"
   },
-
   "lint-staged": {
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,jsx,scss,css,html,md}": "prettier --write"
   }
 }
