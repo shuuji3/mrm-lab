@@ -22,7 +22,7 @@
     "pretest": "npm run lint",
     "format": "prettier --loglevel warn --write \"**/*.{js,jsx,css,scss,md}\"",
     "posttest": "npm run format",
-    "prepare": "git config git.hooksPath .githooks"
+    "prepare": "git config core.hooksPath .githooks"
   },
   "keywords": [],
   "devDependencies": {
