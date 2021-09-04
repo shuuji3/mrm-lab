@@ -1,0 +1,38 @@
+{
+  "name": "mrm-test",
+  "version": "1.0.0",
+  "description": "",
+  "author": {
+    "name": "TAKAHASHI Shuuji"
+  },
+  "contributors": [],
+  "homepage": "https://github.com/shuuji3/mrm-test",
+  "bugs": "https://github.com/shuuji3/mrm-test/issues",
+  "repository": "https://github.com/shuuji3/mrm-test",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint . --cache --fix",
+    "pretest": "npm run lint",
+    "format": "prettier --loglevel warn --write \"**/*.{js,css,md}\"",
+    "posttest": "npm run format",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
