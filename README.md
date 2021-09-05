@@ -30,3 +30,9 @@ Try to commit a broken file and see let us observe how Prettier, set up by mrm, 
 [error]   6 |
 [error]   7 |
 ```
+
+## References
+
+- [Mrm: codemods for your project config files | Mrm](https://mrm.js.org/)
+- [Pre-commit Hook · Prettier](https://prettier.io/docs/en/precommit.html)
+- [Git Hooks without extra dependencies like Husky in Node.js project - DEV Community](https://dev.to/azu/git-hooks-without-extra-dependencies-like-husky-in-node-js-project-jjp)
