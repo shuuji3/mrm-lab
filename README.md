@@ -7,8 +7,10 @@ experimental playground of [mrm](https://mrm.js.org/)
 Try to commit a broken file and see let us observe how Prettier, set up by mrm, prevent the commit!
 
 ```sh
-> git clone https://github.com/shuuji3/mrm-lab && cd $_
-> git reset @^
+> git clone https://github.com/shuuji3/mrm-lab && cd mrm-lab/
+> npm i
+# Uncommit the latest commit and put it to the staged area
+> echo 'bad change' >> hello.js
 > git add .
 > git commit -m 'Commit a bad change'
 ✔ Preparing...
